@@ -3,7 +3,7 @@ on:
     branches: [main]
 jobs:
   check-source:
-    runs-on: ubuntu-lastest
+    runs-on: ubuntu-latest
     steps:
       - run: |
           if [[ "${{ github.head_ref }}" != "develop" && "${{ github.head_ref }}" != hotfix/* ]]; then
